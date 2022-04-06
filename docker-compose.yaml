@@ -1,0 +1,30 @@
+version: '2'
+services:
+  cloudflare-ddns-smart-hub:
+    image: oznu/cloudflare-ddns:latest
+    restart: always
+    environment:
+      - API_KEY=2pMHLxz4sc7PLOtALJmIzQyA85tBz4a1fLoCSyBT
+      - ZONE=smart-hub.pw
+      - PROXIED=true
+  cloudflare-ddns-alohateardroptrails:
+    image: oznu/cloudflare-ddns:latest
+    restart: always
+    environment:
+      - API_KEY=2pMHLxz4sc7PLOtALJmIzQyA85tBz4a1fLoCSyBT
+      - ZONE=alohateardroptrailer.com
+      - PROXIED=true
+  cloudflare-ddns-alohamillworks:
+    image: oznu/cloudflare-ddns:latest
+    restart: always
+    environment:
+      - API_KEY=2pMHLxz4sc7PLOtALJmIzQyA85tBz4a1fLoCSyBT
+      - ZONE=alohamillworks.com
+      - PROXIED=true
+  cloudflare-ddns-jaredwines:
+    image: oznu/cloudflare-ddns:latest
+    restart: always
+    environment:
+      - API_KEY=2pMHLxz4sc7PLOtALJmIzQyA85tBz4a1fLoCSyBT
+      - ZONE=jaredwines.com
+      - PROXIED=true
